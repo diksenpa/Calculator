@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         String[] roman_numbers = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
         int[] arabic_numbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        char[] operands = new char[]{'+', '-', '*', '/'};
+        char[] operands = new char[]{'+', '-', '*', '/', ':'};
         System.out.print("Введите пример: ");
         Scanner sc = new Scanner(System.in);
         String s = Remove_Spaces(sc.nextLine());
@@ -141,7 +141,7 @@ public class Main {
             case "+" -> var10000 = a + b;
             case "-" -> var10000 = a - b;
             case "*" -> var10000 = a * b;
-            case "/" -> var10000 = a / b;
+            case "/", ":" -> var10000 = a / b;
             default -> var10000 = 0;
         }
 
